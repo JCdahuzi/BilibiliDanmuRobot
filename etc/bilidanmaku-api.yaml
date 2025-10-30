@@ -25,7 +25,7 @@ keywordreplylist:
     回复关键词1: 回复内容1
     回复关键词2: 回复内容2
 talkrobotcmd: 花花
-fuzzymatchcmd: false
+fuzzymatchcmd: true
 robotname: 花花
 robotmode: DeepSeek
 chatgpt:

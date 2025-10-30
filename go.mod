@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/go-resty/resty/v2 v2.9.1
 	github.com/wailsapp/wails/v2 v2.10.2
-	github.com/xbclub/BilibiliDanmuRobot-Core v1.1.77
+	github.com/xbclub/BilibiliDanmuRobot-Core v1.2.77
 	github.com/zeromicro/go-zero v1.6.5
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -93,4 +93,4 @@ require (
 )
 
 // 将原仓库替换为你的 fork（用于开发）
-replace github.com/xbclub/BilibiliDanmuRobot-Core => github.com/JCdahuzi/BilibiliDanmuRobot-Core v1.1.77
+replace github.com/xbclub/BilibiliDanmuRobot-Core => github.com/JCdahuzi/BilibiliDanmuRobot-Core v1.2.77
