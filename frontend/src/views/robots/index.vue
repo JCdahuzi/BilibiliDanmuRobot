@@ -49,6 +49,12 @@ const data = reactive({
       Prompt: "",
       Limit: false
     },
+    DeepSeek: {
+      APIToken: "",
+      APIUrl: "",
+      Prompt: "",
+      Limit: false
+    },
     FocusDanmu: [
       "啾咪~",
       "喜欢可以领牌牌哦~",
@@ -486,7 +492,7 @@ onActivated(() => {
       data.form = res.Form;
       formatWelcomeString();
       initWelcomeDanmuByTime();
-      formatKeywordReply()
+      formatKeywordReply();
       if (data.form.ChatGPT.APIUrl.length == 0) {
         data.form.ChatGPT.APIUrl = "https://api.openai.com/v1";
       }
@@ -516,6 +522,7 @@ onActivated(() => {
           <el-select v-model="data.form.RobotMode" placeholder="请选择">
             <el-option label="QingYunKe" value="QingYunKe" />
             <el-option label="ChatGPT" value="ChatGPT" />
+            <el-option label="DeepSeek" value="DeepSeek" />
           </el-select>
         </el-form-item>
         <el-form-item label="API KEY" v-if="data.form.RobotMode == 'ChatGPT'">
@@ -529,6 +536,15 @@ onActivated(() => {
         </el-form-item>
         <el-form-item label="弹幕长度限制" v-if="data.form.RobotMode == 'ChatGPT'">
           <el-switch v-model="data.form.ChatGPT.Limit" />
+        </el-form-item>
+        <el-form-item label="API KEY" v-if="data.form.RobotMode == 'DeepSeek'">
+          <el-input v-model="data.form.DeepSeek.APIToken" />
+        </el-form-item>
+        <el-form-item label="API URL" v-if="data.form.RobotMode == 'DeepSeek'">
+          <el-input v-model="data.form.DeepSeek.APIUrl" />
+        </el-form-item>
+        <el-form-item label="prompt" v-if="data.form.RobotMode == 'DeepSeek'">
+          <el-input v-model="data.form.DeepSeek.Prompt" />
         </el-form-item>
       </el-form>
       <center>

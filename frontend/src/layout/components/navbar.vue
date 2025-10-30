@@ -59,7 +59,16 @@ const data = reactive({
     TalkRobotCmd: "花花",
     RobotMode: "QingYunKe",
     ChatGPT: {
-      APIToken: ""
+      APIToken: "",
+      APIUrl: "",
+      Prompt: "",
+      Limit: false
+    },
+    DeepSeek: {
+      APIToken: "",
+      APIUrl: "",
+      Prompt: "",
+      Limit: false
     },
     FocusDanmu: [
       "啾咪~",

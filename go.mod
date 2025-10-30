@@ -4,8 +4,8 @@ go 1.24
 
 require (
 	github.com/go-resty/resty/v2 v2.9.1
-	github.com/wailsapp/wails/v2 v2.10.1
-	github.com/xbclub/BilibiliDanmuRobot-Core v1.1.21
+	github.com/wailsapp/wails/v2 v2.10.2
+	github.com/xbclub/BilibiliDanmuRobot-Core v1.1.77
 	github.com/zeromicro/go-zero v1.6.5
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -27,7 +27,7 @@ require (
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/golang-module/carbon/v2 v2.2.11 // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/gorilla/websocket v1.5.0 // indirect
+	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.18.0 // indirect
 	github.com/jchv/go-winloader v0.0.0-20250406163304-c1995be93bd1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
@@ -53,7 +53,7 @@ require (
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/samber/lo v1.49.1 // indirect
-	github.com/sashabaranov/go-openai v1.24.1 // indirect
+	github.com/sashabaranov/go-openai v1.41.2 // indirect
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/tidwall/gjson v1.16.0 // indirect
@@ -91,3 +91,6 @@ require (
 	modernc.org/memory v1.5.0 // indirect
 	modernc.org/sqlite v1.23.1 // indirect
 )
+
+// 将原仓库替换为你的 fork（用于开发）
+replace github.com/xbclub/BilibiliDanmuRobot-Core => github.com/JCdahuzi/BilibiliDanmuRobot-Core v1.1.77
